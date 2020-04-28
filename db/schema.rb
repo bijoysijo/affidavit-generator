@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_04_28_140029) do
     t.text "purpose"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.date "retun_date"
+    t.date "return_date"
   end
 
 end
