@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
-	root 'affidavits#new'
-	
+  root 'affidavits#new'
+  resources :affidavits
 end

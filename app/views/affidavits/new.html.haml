@@ -1,1 +1,28 @@
 %h2 Affidavit Generator
+
+.row
+  .col-sm-6
+    = form_with model: @affidavit do |f|
+      .form-group
+        = f.label :name
+        = f.text_field :name, class: 'form-control'
+      .form-group
+        = f.label :address
+        = f.text_area :address, rows: "2", class: 'form-control'
+      .form-group
+        = f.label :vehicle_no
+        = f.text_field :vehicle_no, class: 'form-control'
+      .form-group
+        = f.label :accompanying_person
+        = f.text_field :accompanying_person, class: 'form-control'
+      .form-group
+        = f.label :place
+        = f.text_field :place, class: 'form-control'
+      .form-group
+        = f.label :purpose
+        = f.text_area :purpose, rows: "2", class: 'form-control'
+      .form-group
+        = f.label :return_date
+        = f.date_field :return_date, class: 'form-control'
+
+      = f.submit "Create", class: 'btn btn-primary'
